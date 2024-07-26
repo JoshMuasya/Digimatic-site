@@ -75,3 +75,19 @@
   background-size: cover;
   background-position: center;
 }
+
+.numbers-bg {
+  background-image: url('../public/numbers.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.grow-bg {
+  background-image: url('../public/graph.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

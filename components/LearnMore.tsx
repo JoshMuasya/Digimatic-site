@@ -1,12 +1,13 @@
 import React from 'react'
 import { Button } from './ui/button'
 import Link from 'next/link'
+import Image from 'next/image';
 
 const LearnMore = () => {
     return (
-        <div className='w-full flex flex-row z-10 pt-10 justify-center px-10'>
+        <div className='w-full flex flex-row z-10 pt-10 justify-between px-10'>
             {/* Left */}
-            <div className='w-1/2 pt-52 pr-10'>
+            <div className='w-1/2 pt-32 pr-10'>
                 <div className='flex flex-col justify-center align-middle'>
                     {/* Vision */}
                     <div>
@@ -33,8 +34,14 @@ const LearnMore = () => {
             </div>
 
             {/* Right */}
-            <div className='w-1/2'>
-                <img src="/phonetable.jpg" alt="Phone Table" />
+            <div className='w-1/2 flex flex-col items-end pr-20'>
+                <Image 
+                    src="/phonetable.jpg"
+                    alt="Learn More"
+                    width={500}
+                    height={500}
+                    className='rounded-2xl'
+                />
             </div>
         </div >
     )
