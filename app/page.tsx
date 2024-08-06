@@ -1,4 +1,3 @@
-import Contact from "@/components/Contact";
 import Grow from "@/components/Grow";
 import Hero from "@/components/Hero";
 import HeroBorder from "@/components/HeroBorder";
@@ -13,7 +12,6 @@ export default function Home() {
       <LearnMore />
       <OurNumbers />
       <Grow />
-      <Contact />
     </main>
   );
 }
