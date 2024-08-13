@@ -99,3 +99,27 @@
   background-position: center;
   background-attachment: fixed;
 }
+
+.carousel-1 {
+  background-image: url('../public/security.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.carousel-2 {
+  background-image: url('../public/security.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.carousel-3 {
+  background-image: url('../public/security.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

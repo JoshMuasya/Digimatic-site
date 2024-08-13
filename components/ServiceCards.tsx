@@ -154,8 +154,21 @@ const ServiceCards = () => {
             </div>
 
             {/* Carousel */}
-            <div>
+            <div className='w-full flex flex-col justify-center items-center align-middle py-5 bg-border'>
                 <ServiceCarousel />
+
+                {/* Companies */}
+                <div className='pt-10'>
+                    {/* Title */}
+                    <h1 className='text-5xl font-bold'>
+                        Our Clients
+                    </h1>
+
+                    {/* Logos */}
+                    <div>
+
+                    </div>
+                </div>
             </div>
         </div>
     )
