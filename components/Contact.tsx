@@ -94,7 +94,7 @@ const Contact = () => {
                     </div>
 
                     <p className='text-center text-muted pl-2'>
-                        digimaticmarketers 2024
+                        2024 digimaticmarketers
                     </p>
                 </div>
             </div>
