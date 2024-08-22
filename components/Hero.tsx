@@ -30,7 +30,7 @@ const Hero = () => {
                 {/* CTA */}
                 <div className=''>
                     <Button asChild className='text-2xl font-semibold p-7'>
-                        <Link href="">Contact Us</Link>
+                        <Link href="/contact">Contact Us</Link>
                     </Button>
                 </div>
             </div>

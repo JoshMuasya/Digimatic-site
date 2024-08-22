@@ -54,7 +54,7 @@ const NavBar = () => {
                         </li>
 
                         <li className='hover:font-bold hover:text-xl hover:transition-transform hover:duration-100 hover:ease-in-out ease-in-out duration-100 transition-transform hover:underline hover:decoration-4 hover:decoration-primary hover:text-primary'>
-                            <Link href=''>
+                            <Link href='/portfolio'>
                                 Portfolio
                             </Link>
                         </li>
@@ -85,13 +85,13 @@ const NavBar = () => {
 
                     <div className={`${isOpen ? "block" : "hidden"} md:hidden flex flex-col justify-center align-middle items-start bg-white absolute top-14 right-0 w-2/3 pl-10`}>
                         <Link href="/" className="font-bold text-xl text-primary pb-5">Home</Link>
-                        <Link href="/" className="font-bold text-xl text-primary pb-5">About Us</Link>
-                        <Link href="/" className="font-bold text-xl text-primary pb-5">Services</Link>
-                        <Link href="/" className="font-bold text-xl text-primary pb-5">Portfolio</Link>
+                        <Link href="/about" className="font-bold text-xl text-primary pb-5">About Us</Link>
+                        <Link href="/services" className="font-bold text-xl text-primary pb-5">Services</Link>
+                        <Link href="/portfolio" className="font-bold text-xl text-primary pb-5">Portfolio</Link>
 
                         <div className='pb-10'>
                             <Button asChild className='md:text-xl font-medium hover:font-semibold p-7 '>
-                                <Link href="">Contact Us</Link>
+                                <Link href="/contact">Contact Us</Link>
                             </Button>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ const NavBar = () => {
             {/* CTA */}
             <div className='hidden md:flex'>
                 <Button asChild className='md:text-xl font-medium hover:font-semibold p-7'>
-                    <Link href="">Contact Us</Link>
+                    <Link href="/contact">Contact Us</Link>
                 </Button>
             </div>
         </nav>

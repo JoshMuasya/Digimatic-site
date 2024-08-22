@@ -42,7 +42,7 @@ const AboutSolution = () => {
                 {/* CTA */}
                 <div className=''>
                     <Button asChild className='text-2xl font-semibold p-7'>
-                        <Link href="">Learn More</Link>
+                        <Link href="/contact">Learn More</Link>
                     </Button>
                 </div>
 

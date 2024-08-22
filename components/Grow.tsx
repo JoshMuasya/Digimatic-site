@@ -44,7 +44,7 @@ const Grow = () => {
                 {/* CTA */}
                 <div className='z-20 pt-8'>
                     <Button asChild className='text-2xl font-semibold p-7'>
-                        <Link href="">Get in Touch</Link>
+                        <Link href="/contact">Get in Touch</Link>
                     </Button>
                 </div>
             </div>

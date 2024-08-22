@@ -9,6 +9,7 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 import ServiceCarousel from './ServiceCarousel'
+import { LogoCarousel } from './LogoCarousel'
 
 const ServiceCards = () => {
     return (
@@ -158,15 +159,33 @@ const ServiceCards = () => {
                 <ServiceCarousel />
 
                 {/* Companies */}
-                <div className='pt-10'>
+                <div className='pt-10 flex flex-col justify-center align-middle items-center'>
                     {/* Title */}
                     <h1 className='text-5xl font-bold'>
                         Our Clients
                     </h1>
 
                     {/* Logos */}
-                    <div>
+                    <div className='py-10 flex flex-row justify-center items-center align-middle'>
+                        <div className='rounded-full bg-secondary h-40 w-40 flex flex-col justify-center align-middle items-center mx-5'>
+                            <img src="/nma.png" alt="NMA" className='h-28' />
+                        </div>
 
+                        <div className='rounded-full bg-secondary h-40 w-40 flex flex-col justify-center align-middle items-center mx-5'>
+                            <img src="/odyssey.png" alt="Odyssey" className='h-28' />
+                        </div>
+
+                        <div className='rounded-full bg-secondary h-40 w-40 flex flex-col justify-center align-middle items-center mx-5'>
+                            <img src="/Thiiya.png" alt="Thiiya" className='h-48' />
+                        </div>
+
+                        <div className='rounded-full bg-secondary h-40 w-40 flex flex-col justify-center align-middle items-center mx-5'>
+                            <img src="/storm.jpg" alt="Storm" className='h-28' />
+                        </div>
+
+                        <div className='rounded-full bg-secondary h-40 w-40 flex flex-col justify-center align-middle items-center mx-5'>
+                            <img src="/ngara.png" alt="Ngara" className='h-28' />
+                        </div>
                     </div>
                 </div>
             </div>
