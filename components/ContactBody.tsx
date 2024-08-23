@@ -8,27 +8,32 @@ const ContactBody = () => {
     return (
         <div className='w-full my-10 flex flex-col md:flex-row justify-center md:justify-around px-20 align-middle items-start'>
             {/* Left */}
-            <div className='flex flex-col justify-center items-start align-middle w-full'>
-                {/* Top */}
-                <div>
+            {/* <div className='flex flex-col justify-center items-center md:items-start align-middle w-full'> */}
+            {/* Top */}
+            {/* <div>
+                    <p className='text-xl font-bold'>
+                        Let&apos;s get in touch!
+                    </p>
+                </div> */}
+
+            {/* Bottom */}
+            {/* <div className='w-full pb-10 md:pb-0'>
+                    <ContactUsForm />
+                </div> */}
+            {/* </div> */}
+
+            {/* Right */}
+            <div className='flex flex-col justify-center items-center md:items-start align-middle w-full md:w-1/2'>
+                <div className='w-full flex flex-col justify-center align-middle items-center pb-10'>
+                    {/* Title */}
+                    <h1 className='text-3xl font-bold pb-8'>
+                        DIGIMATIC MARKETERS
+                    </h1>
+
                     <p className='text-xl font-bold'>
                         Let&apos;s get in touch!
                     </p>
                 </div>
-
-                {/* Bottom */}
-                <div className='w-full'>
-                    <ContactUsForm />
-                </div>
-            </div>
-
-            {/* Right */}
-            <div className='flex flex-col justify-center items-start align-middle w-1/2'>
-
-                {/* Title */}
-                <h1 className='text-3xl font-bold pb-8'>
-                    DIGIMATIC MARKETERS
-                </h1>
 
                 {/* Details */}
                 <div className='flex flex-col justify-center items-start align-middle'>

@@ -14,8 +14,8 @@ import { LogoCarousel } from './LogoCarousel'
 const ServiceCards = () => {
     return (
         <div className='flex flex-col justify-center align-middle items-center'>
-            <div className='bg-destructive-foreground w-full flex flex-row justify-center align-middle items-start py-10 px-14'>
-                <Card className="w-1/3 mx-5">
+            <div className='bg-destructive-foreground w-full flex flex-col lg:flex-row justify-center align-middle items-start py-3 md:py-10 px-5 md:px-14'>
+                <Card className="w-full lg:w-1/3 mx-2 md:mx-5 mb-3 lg:mb-0">
                     <div className=''>
                         <img src="/software.jpg" alt="Hero Border"
                             className='rounded-t-2xl'
@@ -37,7 +37,7 @@ const ServiceCards = () => {
                     </CardContent>
                 </Card>
 
-                <Card className="w-1/3 mx-5">
+                <Card className="w-full lg:w-1/3 mx-2 md:mx-5 mb-3 lg:mb-0">
                     <div className=''>
                         <img src="/website.jpg" alt="Hero Border"
                             className='rounded-t-2xl'
@@ -60,7 +60,7 @@ const ServiceCards = () => {
                     </CardContent>
                 </Card>
 
-                <Card className="w-1/3 mx-5">
+                <Card className="w-full lg:w-1/3 mx-2 md:mx-5 mb-3 lg:mb-0">
                     <div className=''>
                         <img src="/graphic.jpg" alt="Hero Border"
                             className='rounded-t-2xl'
@@ -84,8 +84,8 @@ const ServiceCards = () => {
                 </Card>
             </div>
 
-            <div className='bg-destructive-foreground w-full flex flex-row justify-center align-middle items-start py-10 px-14'>
-                <Card className="w-1/3 mx-5">
+            <div className='bg-destructive-foreground w-full flex flex-col lg:flex-row justify-center align-middle items-start py-10 px-5 md:px-14'>
+                <Card className="w-full lg:w-1/3 mx-2 md:mx-5 mb-3 lg:mb-0">
                     <div className=''>
                         <img src="/marketing.jpg" alt="Hero Border"
                             className='rounded-t-2xl'
@@ -107,7 +107,7 @@ const ServiceCards = () => {
                     </CardContent>
                 </Card>
 
-                <Card className="w-1/3 mx-5">
+                <Card className="w-full lg:w-1/3 mx-2 md:mx-5 mb-3 lg:mb-0">
                     <div className=''>
                         <img src="/security.jpg" alt="Hero Border"
                             className='rounded-t-2xl'
@@ -130,7 +130,7 @@ const ServiceCards = () => {
                     </CardContent>
                 </Card>
 
-                <Card className="w-1/3 mx-5">
+                <Card className="w-full lg:w-1/3 mx-2 md:mx-5 mb-3 lg:mb-0">
                     <div className=''>
                         <img src="/support.jpg" alt="Hero Border"
                             className='rounded-t-2xl'
@@ -161,29 +161,29 @@ const ServiceCards = () => {
                 {/* Companies */}
                 <div className='pt-10 flex flex-col justify-center align-middle items-center'>
                     {/* Title */}
-                    <h1 className='text-5xl font-bold'>
+                    <h1 className='text-3xl md:text-5xl font-bold'>
                         Our Clients
                     </h1>
 
                     {/* Logos */}
-                    <div className='py-10 flex flex-row justify-center items-center align-middle'>
-                        <div className='rounded-full bg-secondary h-40 w-40 flex flex-col justify-center align-middle items-center mx-5'>
+                    <div className='py-10 flex flex-col md:flex-row justify-center items-center align-middle flex-wrap'>
+                        <div className='rounded-full bg-secondary h-40 w-40 flex flex-col justify-center align-middle items-center mx-5 mb-3 md:mb-0'>
                             <img src="/nma.png" alt="NMA" className='h-28' />
                         </div>
 
-                        <div className='rounded-full bg-secondary h-40 w-40 flex flex-col justify-center align-middle items-center mx-5'>
+                        <div className='rounded-full bg-secondary h-40 w-40 flex flex-col justify-center align-middle items-center mx-5 mb-3 md:mb-0'>
                             <img src="/odyssey.png" alt="Odyssey" className='h-28' />
                         </div>
 
-                        <div className='rounded-full bg-secondary h-40 w-40 flex flex-col justify-center align-middle items-center mx-5'>
+                        <div className='rounded-full bg-secondary h-40 w-40 flex flex-col justify-center align-middle items-center mx-5 mb-3 md:mb-0'>
                             <img src="/Thiiya.png" alt="Thiiya" className='h-48' />
                         </div>
 
-                        <div className='rounded-full bg-secondary h-40 w-40 flex flex-col justify-center align-middle items-center mx-5'>
+                        <div className='rounded-full bg-secondary h-40 w-40 flex flex-col justify-center align-middle items-center mx-5 mb-3 md:mb-0'>
                             <img src="/storm.jpg" alt="Storm" className='h-28' />
                         </div>
 
-                        <div className='rounded-full bg-secondary h-40 w-40 flex flex-col justify-center align-middle items-center mx-5'>
+                        <div className='rounded-full bg-secondary h-40 w-40 flex flex-col justify-center align-middle items-center mx-5 mb-3 md:mb-0'>
                             <img src="/ngara.png" alt="Ngara" className='h-28' />
                         </div>
                     </div>

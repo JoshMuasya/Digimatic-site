@@ -5,16 +5,16 @@ const OurNumbers = () => {
         <div className='numbers-bg w-full h-60 mt-20 flex flex-col  justify-center'>
             <div className='bg-black/70 absolute left-0 w-full h-60 z-0' />
             {/* Numbers */}
-            <div className='flex flex-row z-20 justify-around align-middle items-center text-white'>
+            <div className='flex flex-row z-20 justify-around align-middle items-start text-white px-2 w-full'>
                 {/* First */}
                 <div className='flex flex-col justify-center align-middle items-center z-20'>
                     {/* Number */}
-                    <div className='font-bold text-4xl pb-4'>
+                    <div className='font-bold text-2xl md:text-3xl lg:text-4xl pb-4'>
                         20+
                     </div>
 
                     {/* Description */}
-                    <div className='font-medium text-2xl text-center'>
+                    <div className='font-medium text-lg md:text-xl lg:text-2xl text-center'>
                         Flexible options to meet <br/> your needs
                     </div>
                 </div>
@@ -22,12 +22,12 @@ const OurNumbers = () => {
                 {/* Second */}
                 <div className='flex flex-col justify-center align-middle items-center z-20'>
                     {/* Number */}
-                    <div className='font-bold text-4xl pb-4'>
+                    <div className='font-bold text-2xl md:text-3xl lg:text-4xl pb-4'>
                         300+
                     </div>
 
                     {/* Description */}
-                    <div className='font-medium text-2xl text-center'>
+                    <div className='font-medium text-lg md:text-xl lg:text-2xl text-center'>
                         Beautiful design elements to <br/>enhance your website
                     </div>
                 </div>
@@ -35,12 +35,12 @@ const OurNumbers = () => {
                 {/* Third */}
                 <div className='flex flex-col justify-center align-middle items-center z-20'>
                     {/* Number */}
-                    <div className='font-bold text-4xl pb-4'>
+                    <div className='font-bold text-2xl md:text-3xl lg:text-4xl pb-4'>
                         10+
                     </div>
 
                     {/* Description */}
-                    <div className='font-medium text-2xl'>
+                    <div className='font-medium text-lg md:text-xl lg:text-2xl'>
                         Amazing Softwares
                     </div>
                 </div>

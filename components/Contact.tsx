@@ -9,25 +9,25 @@ const Contact = () => {
             {/* Content */}
             <div className='w-full flex flex-col justify-center items-center align-middle'>
                 {/* Icons */}
-                <div className='w-1/3 flex flex-row justify-around align-middle items-center'>
+                <div className='w-full md:w-1/3 flex flex-row justify-around align-middle items-center'>
                     {/* Instagram */}
                     <div className='bg-muted rounded-full p-5'>
                         <InstagramLogoIcon
-                            className='text-primary w-10 h-10'
+                            className='text-primary w-5 h-5 md:w-10 md:h-10'
                         />
                     </div>
 
                     {/* X */}
                     <div className='bg-muted rounded-full p-5'>
                         <FaXTwitter
-                            className='text-primary w-10 h-10'
+                            className='text-primary w-5 h-5 md:w-10 md:h-10'
                         />
                     </div>
 
                     {/* Linked In */}
                     <div className='bg-muted rounded-full p-5'>
                         <LinkedInLogoIcon
-                            className='text-primary w-10 h-10'
+                            className='text-primary w-5 h-5 md:w-10 md:h-10'
                         />
                     </div>
                 </div>
@@ -35,22 +35,22 @@ const Contact = () => {
                 {/* Text */}
                 <div className='flex flex-col justify-center align-middle items-center py-10 w-full'>
                     {/* Top */}
-                    <div className='pb-5 flex flex-row justify-center items-center align-middle'>
+                    <div className='pb-5 px-2 flex flex-row justify-center items-center align-middle'>
                         {/* Address */}
                         {/* address icon */}
                         <div className='bg-muted rounded-full p-2'>
                             <TargetIcon
-                                className='text-primary w-5 h-5'
+                                className='text-primary w-3 h-3 md:w-5 md:h-5'
                             />
                         </div>
 
-                        <p className='text-center font-medium text-lg text-muted pl-5'>
+                        <p className='text-center font-medium text-base md:text-lg text-muted pl-2 md:pl-5'>
                             Westlands Commercial Center, Westlands, Nairobi, Kenya
                         </p>
                     </div>
 
                     {/* Bottom */}
-                    <div className='flex flex-row justify-around align-middle items-center w-1/3'>
+                    <div className='flex flex-col lg:flex-row justify-around align-middle items-center w-full md:w-2/3'>
                         {/* Phone */}
                         <div className='pb-5 flex flex-row justify-center items-center align-middle'>
                             {/* Mobile icon */}
@@ -59,7 +59,7 @@ const Contact = () => {
                                     className='text-primary w-5 h-5'
                                 />
                             </div>
-                            <p className='text-center font-medium text-lg text-muted pl-3'>
+                            <p className='text-center font-medium text-lg text-muted pl-2 md:pl-3'>
                                 +254 798 040 353
                             </p>
                         </div>
@@ -81,7 +81,7 @@ const Contact = () => {
 
                 {/* Logo */}
                 <div>
-                    <img src="/logo.png" alt="Logo" />
+                    <img src="/logo.png" alt="Logo" className='w-20' />
                 </div>
 
                 {/* Copyright */}

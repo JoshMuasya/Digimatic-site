@@ -5,9 +5,9 @@ import Link from 'next/link';
 
 const AboutSolution = () => {
     return (
-        <div className='w-full flex flex-row pt-10 pb-12 justify-between px-14'>
+        <div className='w-full flex flex-col md:flex-row pt-10 pb-12 justify-between px-5 md:px-14'>
             {/* Left */}
-            <div className='w-1/2 flex flex-col items-start pl-16'>
+            <div className='w-full md:w-1/2 flex flex-col md:items-start md:pl-16'>
                 <Image
                     src="/solution.jpg"
                     alt="Learn More"
@@ -18,7 +18,7 @@ const AboutSolution = () => {
             </div>
 
             {/* Right */}
-            <div className='w-1/2 pt-32 pr-10'>
+            <div className='w-full md:w-1/2 pt-32 md:pr-10'>
                 <div className='flex flex-col justify-center align-middle'>
                     {/* Vision */}
                     <div>
