@@ -62,7 +62,7 @@ const ServiceCarousel = () => {
                                             <div className='pl-5'>
                                                 {/* Name */}
                                                 <h1 className='text-xl font-semibold'>
-                                                    John Doe - Odyssey Africa Hikes                                                    
+                                                    Ali Safdar - Odyssey Africa Hikes                                                    
                                                 </h1>
                                             </div>
                                         </div>
