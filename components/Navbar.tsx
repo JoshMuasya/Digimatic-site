@@ -59,11 +59,11 @@ const NavBar = () => {
                             </Link>
                         </li> */}
 
-                        <li className='hover:font-bold hover:text-xl hover:transition-transform hover:duration-100 hover:ease-in-out ease-in-out duration-100 transition-transform hover:underline hover:decoration-4 hover:decoration-primary hover:text-primary'>
+                        {/* <li className='hover:font-bold hover:text-xl hover:transition-transform hover:duration-100 hover:ease-in-out ease-in-out duration-100 transition-transform hover:underline hover:decoration-4 hover:decoration-primary hover:text-primary'>
                             <Link href='/contact'>
                                 Contact Us
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
 
