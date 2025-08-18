@@ -1,12 +1,17 @@
+import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-import { NextResponse, NextRequest } from 'next/server';
 
-export const runtime = 'nodejs';
+export async function POST(request: NextRequest) {
+    const { name, phonenumber, email, subject, question } = await request.json();
 
-export async function POST(request: NextRequest): Promise<NextResponse> {
+    if (!name || !email || !phonenumber || !subject || !question) {
+        return new Response(JSON.stringify({ success: false, error: 'Missing fields' }), {
+            status: 400,
+            headers: { 'Content-Type': 'application/json' }
+        });
+    }
+
     try {
-        const { name, phonenumber, email, subject, question } = await request.json();
-
         // Configure Email
         const transporter = nodemailer.createTransport({
             service: 'gmail',
@@ -16,25 +21,23 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
             },
         });
 
-        const mailOptions = {
-            from: `"Contact Form" <${process.env.EMAIL}>`,
+        await transporter.sendMail({
+            from: `"${name}" <${email}>`,
             to: process.env.EMAIL,
-            subject: `New Contact Us Message: ${subject}`,
-            text: `
-            Name: ${name}
-            Phonenumber: ${phonenumber}
-            Email: ${email}
-            Question: ${question}
-            `,
-        };
+            subject: `${subject}`,
+            html: `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>PhoneNumber:</strong> ${phonenumber}</p>
+        <p><strong>Message:</strong><br>${question.replace(/\n/g, '<br>')}</p>
+      `,
+        })
 
-        // Send Email
-        const info = await transporter.sendMail(mailOptions);
-        console.log('Message sent: %s', info.messageId);
-
-        return NextResponse.json({
-            message: 'Message sent successfully',
+        return new Response(JSON.stringify({ success: true }), {
+            status: 200,
+            headers: { 'Content-Type': 'application/json' }
         });
+
     } catch (error) {
         console.error('Error sending email:', error);
         return NextResponse.json({ message: 'Email could not be sent', error }, { status: 500 });

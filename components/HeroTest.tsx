@@ -1,69 +1,75 @@
 "use client"
 
-// components/Hero.js
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { useState } from 'react';
-import Loading from './Loading';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { EffectFade, Navigation, Pagination } from 'swiper/modules';
 
 const HeroTest = () => {
-  const [loading, setLoading] = useState(true);
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
-      },
+  const services = [
+    {
+      title: "Software Development",
+      description: "Build Scalable, Custom Software Solutions.",
+      image: "/images/software-dev.png",
     },
-  };
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
+    {
+      title: "Web Development",
+      description: "Design Stunning, User-Friendly Websites.",
+      image: "/images/web-dev.png",
     },
-  };
+    {
+      title: "Digital Marketing",
+      description: "Drive Growth with Data-Driven Marketing Strategies.",
+      image: "/images/digital-marketing.png",
+    },
+    {
+      title: "Cybersecurity",
+      description: "Secure Your Business with Advanced Cybersecurity Solutions.",
+      image: "/images/cybersecurity.png",
+    },
+  ];
 
   return (
-    <>
-      {loading && <Loading onLoadingComplete={() => setLoading(false)} />}
-      {!loading && (
-        <motion.div
-          className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 to-purple-600 text-white"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          <motion.h1
-            className="text-6xl font-bold mb-4"
-            variants={itemVariants}
+    <div className="min-h-screen bg-black text-white flex flex-col justify-center items-center relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-900 via-indigo-900 to-black opacity-75"></div>
+      <div className="relative z-10 text-center">
+        <img src="/logo.svg" alt="Digimatic Marketers Logo" className="w-48 mx-auto mb-8" />
+        <h1 className="text-5xl font-bold mb-4">Open the Future</h1>
+        <p className="text-xl mb-8">From Software Development to Cybersecurity, We Deliver Results That Matter.</p>
+        <div className="w-full max-w-4xl mx-auto">
+          <Swiper
+            effect={'fade'}
+            navigation={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[EffectFade, Navigation, Pagination]}
+            className="mySwiper"
           >
-            Innovating the Future
-          </motion.h1>
-          <motion.p
-            className="text-xl mb-8"
-            variants={itemVariants}
-          >
-            We build cutting-edge software solutions for your business.
-          </motion.p>
-          <motion.div variants={itemVariants}>
-            <Link href="/contact">
-              <motion.button
-                className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Get Started
-              </motion.button>
-            </Link>
-          </motion.div>
-        </motion.div>
-      )}
-    </>
+            {services.map((service, index) => (
+              <SwiperSlide key={index}>
+                <div className="flex flex-col items-center justify-center p-8">
+                  <img src={service.image} alt={service.title} className="w-32 h-32 mb-4" />
+                  <h2 className="text-3xl font-bold mb-4">{service.title}</h2>
+                  <p className="text-lg">{service.description}</p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        <div className="mt-8">
+          <a href="#services" className="bg-purple-600 text-white px-6 py-3 rounded-lg mr-4 hover:bg-purple-700 transition duration-300">
+            Explore Our Services
+          </a>
+          <a href="#success-stories" className="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition duration-300">
+            See Our Success Stories
+          </a>
+        </div>
+      </div>
+    </div>
   );
 };
 
